@@ -9,5 +9,5 @@ Install
 Get package:
 > git clone https://github.com/rgies/symfony.git
 
-Update with composer
+Install with composer:
 > php composer.phar update
