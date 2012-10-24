@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/framework-standard-edition": "2.2.*"
+        "symfony/framework-standard": "2.2.*"
     },
     "scripts": {
     },
