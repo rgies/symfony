@@ -1,13 +1,17 @@
 Abstract
 ===========
 
-Special Symfony2 Package
+Special Symfony2 Distribution
 
 Install
 ========
 
-Get package:
-> git clone https://github.com/rgies/symfony.git
-
 Install with composer:
+> php composer.phar create-project rgies/symfony ./
+
+
+Update
+========
+
+Update with composer:
 > php composer.phar update
