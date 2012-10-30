@@ -16,21 +16,23 @@ Update
 ========
 
 Update with composer:
-&gt; php composer.phar update
+
+> php composer.phar update
+
 
 Symfony Twig Template Sample
 =============================
 
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Hello World&lt;/title&gt;
-    &lt;!-- Bootstrap --&gt;
-    &lt;link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello {{ name }}!&lt;/h1&gt;
-    &lt;script src="{{ asset('js/jquery-1.8.2.min.js') }}"&gt;&lt;/script&gt;
-    &lt;script src="{{ asset('js/bootstrap.min.js') }}"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Hello World&lt;/title&gt;
+        &lt;!-- Bootstrap --&gt;
+        &lt;link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen"&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Hello {{ name }}!&lt;/h1&gt;
+        &lt;script src="{{ asset('js/jquery-1.8.2.min.js') }}"&gt;&lt;/script&gt;
+        &lt;script src="{{ asset('js/bootstrap.min.js') }}"&gt;&lt;/script&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
