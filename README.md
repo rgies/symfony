@@ -17,3 +17,20 @@ Update
 
 Update with composer:
 > php composer.phar update
+
+Symfony Twig Template Sample
+=============================
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <!-- Bootstrap -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <h1>Hello {{ name }}!</h1>
+    <script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
