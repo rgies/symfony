@@ -16,7 +16,9 @@ Update
 ========
 
 Update with composer:
-&gt; php composer.phar update
+
+> php composer.phar update
+
 
 Symfony Twig Template Sample
 =============================
