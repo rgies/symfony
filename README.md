@@ -9,7 +9,7 @@ Install
 Download and install Composer from http://getcomposer.org.
 Then start the command line and type in the following command to install this Symfony Distribution.
 
-> composer create-project rgies/symfony
+> php composer.phar create-project rgies/symfony
 
 
 Update
@@ -17,7 +17,7 @@ Update
 
 Update with composer:
 
-> composer update
+> php composer.phar update
 
 
 Symfony Twig Template Sample
