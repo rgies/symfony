@@ -47,7 +47,7 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "dev"
     },
     "minimum-stability": "stable",
     "extra": {
