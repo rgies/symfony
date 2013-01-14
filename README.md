@@ -9,7 +9,7 @@ Install
 Download and install Composer from http://getcomposer.org.
 Then start the command line and type in the following command to install this Symfony Distribution.
 
-> php composer.phar create-project rgies/symfony
+> php composer.phar create-project -s dev rgies/symfony
 
 
 Update
