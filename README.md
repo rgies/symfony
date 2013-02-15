@@ -23,7 +23,7 @@ Update with composer:
 Create bundle:
 ==========================
 
-Create you own new bundle:
+Create your own new bundle:
 
 > symfony/app/console generate:bundle
 
