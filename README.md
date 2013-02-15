@@ -51,6 +51,19 @@ Copy following html code to your default view symfony/src/[your bundle]/Resource
       </head>
       <body>
         <h1>Hello {{ name }}!</h1>
+        
+        <!-- Sample Bootstrap Components -->
+        <h4>Bootstrap Samples:</h4>
+        <h5>Labels</h5>
+        <p>
+            <span class="label">Default</span>
+            <span class="label label-success">Success</span>
+            <span class="label label-warning">Warning</span>
+            <span class="label label-important">Important</span>
+        </p>
+
+        <p>Here you can insert your twitter bootstrap components</p>
+        
         <script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
       </body>
