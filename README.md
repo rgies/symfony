@@ -27,9 +27,20 @@ Create your own new bundle:
 
 > symfony/app/console generate:bundle
 
+Clear cache:
+
+> symfony/app/console cache:clear -env=prod
+
+Test your new bundle:
+
+> http://.../hello/user
+
 
 Symfony Twig Template Sample
 =============================
+
+Copy following html code to your default view symfony/src/[your bundle]/Resources/views/Default/index.html.twig and clear the symfony cache again.
+
 
     <!DOCTYPE html>
     <html>
