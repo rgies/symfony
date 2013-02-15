@@ -1,13 +1,13 @@
 Abstract
 ===========
 
-Special Symfony2 Distribution with Twitter Bootstrap
+Special Symfony 2.2 Distribution with Twitter Bootstrap
 
 Install
 ========
 
 Download and install Composer from http://getcomposer.org.
-Then start the command line and type in the following command to install this Symfony Distribution.
+Then start the command and goto your web root folder. Here are a new folder with the name 'symfony' are created. Type in the following command to install Symfony.
 
 > php composer.phar create-project -s dev rgies/symfony
 
