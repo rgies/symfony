@@ -20,6 +20,14 @@ Update with composer:
 > php composer.phar update
 
 
+Create bundle:
+==========================
+
+Create you own new bundle:
+
+> symfony/app/console generate:bundle
+
+
 Symfony Twig Template Sample
 =============================
 
