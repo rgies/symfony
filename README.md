@@ -41,7 +41,7 @@ Symfony Twig Template Sample
 
 Copy following html code to your default view symfony/src/[your bundle]/Resources/views/Default/index.html.twig and clear the symfony cache again.
 
-
+#### src/[your bundle]/Resources/views/Default/index.html.twig
     <!DOCTYPE html>
     <html>
       <head>
@@ -75,7 +75,8 @@ Symfony Twig Sample with base Template
 Copy following html code to your default view symfony/src/[your bundle]/Resources/views/Default/index.html.twig and adjust the symfony/app/Resources/views/base.html.twig. Clear the symfony cache again.
 
 
-    <!-- app/Resources/views/base.html.twig -->
+####app/Resources/views/base.html.twig
+
     <!DOCTYPE html>
     <html>
         <head>
@@ -94,8 +95,8 @@ Copy following html code to your default view symfony/src/[your bundle]/Resource
         </body>
     </html>
 
+####src/[your bundle]/Resources/views/Default/index.html.twig
 
-    <!-- src/[your bundle]/Resources/views/Default/index.html.twig -->
     {% extends '::base.html.twig' %}
     {% block title %}Hello{% endblock %}
     {% block body %}
