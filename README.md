@@ -1,7 +1,7 @@
 Abstract
 ===========
 
-Special Symfony 2.2 Distribution with Twitter Bootstrap
+Special Symfony 2.4 Distribution with Twitter Bootstrap
 
 Install
 ========
@@ -53,8 +53,7 @@ Copy following html code to your default view symfony/src/[your bundle]/Resource
         <h1>Hello {{ name }}!</h1>
         
         <!-- Sample Bootstrap Components -->
-        <h4>Bootstrap Samples:</h4>
-        <h5>Labels</h5>
+        <h4>Bootstrap Labels:</h4>
         <p>
             <span class="label">Default</span>
             <span class="label label-success">Success</span>
@@ -68,3 +67,51 @@ Copy following html code to your default view symfony/src/[your bundle]/Resource
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
       </body>
     </html>
+
+
+Symfony Twig Sample with base Template
+========================================
+
+Copy following html code to your default view symfony/src/[your bundle]/Resources/views/Default/index.html.twig and adjust the symfony/app/Resources/views/base.html.twig. Clear the symfony cache again.
+
+
+    <!-- app/Resources/views/base.html.twig -->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <title>{% block title %}Welcome!{% endblock %}</title>
+            <!-- Bootstrap -->
+            <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+            {% block stylesheets %}{% endblock %}
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        </head>
+        <body>
+            {% block body %}{% endblock %}
+            <script src="{{ asset('js/jquery-1.10.2.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+            {% block javascripts %}{% endblock %}
+        </body>
+    </html>
+
+
+    <!-- src/[your bundle]/Resources/views/Default/index.html.twig -->
+    {% extends '::base.html.twig' %}
+    {% block title %}Hello{% endblock %}
+    {% block body %}
+    <h1>Hello {{ name }}!</h1>
+
+    <!-- Sample Bootstrap Components -->
+    <h4>Bootstrap Labels</h4>
+    <p>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </p>
+
+    <p>Here you can insert your twitter bootstrap components</p>
+    {% endblock %}
+    
