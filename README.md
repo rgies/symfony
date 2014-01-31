@@ -64,7 +64,7 @@ Copy following html code to your default view symfony/src/[your bundle]/Resource
 
         <p>Here you can insert your twitter bootstrap components</p>
         
-        <script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
+        <script src="{{ asset('js/jquery-1.10.2.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
       </body>
     </html>
