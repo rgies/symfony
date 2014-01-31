@@ -25,11 +25,11 @@ Create bundle:
 
 Create your own new bundle:
 
-> symfony/app/console generate:bundle
+> ./app/console generate:bundle
 
 Clear cache:
 
-> symfony/app/console cache:clear -env=prod
+> ./app/console cache:clear -env=prod
 
 Test your new bundle:
 
