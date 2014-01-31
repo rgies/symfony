@@ -9,7 +9,7 @@ Install
 Download and install Composer from http://getcomposer.org.
 Then start the command line and goto your web root folder. Here a new folder 'symfony' created. Type in the following command to install Symfony.
 
-> php composer.phar create-project -s dev rgies/symfony
+> php composer.phar create-project -s dev rgies/symfony [path]/
 
 
 Update
