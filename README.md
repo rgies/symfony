@@ -6,7 +6,7 @@ Special Symfony 2.4 Distribution with Twitter Bootstrap
 Install
 ========
 
-Download and install Composer from http://getcomposer.org.
+Download and install (Composer)[http://getcomposer.org].
 Then start the command line and goto your web root folder. Create here your new project folder and then jump into this folder. Type in the following command to install Symfony.
 
 > php composer.phar create-project -s dev rgies/symfony [my-project]
@@ -42,7 +42,7 @@ Test your new bundle:
 Symfony Twig Template Sample
 =============================
 
-Copy following html code to your default view symfony/src/[your bundle]/Resources/views/Default/index.html.twig and clear the symfony cache again.
+Copy following html code to your default view `symfony/src/[your bundle]/Resources/views/Default/index.html.twig` and clear the symfony cache again.
 
 ####src/[your bundle]/Resources/views/Default/index.html.twig
 
