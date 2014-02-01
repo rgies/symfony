@@ -7,18 +7,18 @@ Install
 ========
 
 Download and install [Composer](http://getcomposer.org).
-Then start the command line and goto your web root folder. Create here your new project folder and then jump into this folder. Type in the following command to install Symfony.
+Then start the command line and goto your web root folder. Type in the following command to install Symfony.
 
 > php composer.phar create-project -s dev rgies/symfony [my-project]
 
-Go to your project directory:
+**Go to your project directory:**
 
 > cd [my-project]
 
 Update
 ========
 
-Update with composer:
+**Update with composer:**
 
 > php composer.phar update
 
@@ -26,15 +26,15 @@ Update with composer:
 Create bundle:
 ==========================
 
-Create your own new bundle:
+**Create your own new bundle:**
 
 > ./app/console generate:bundle
 
-Clear cache:
+**Clear cache:**
 
 > ./app/console cache:clear -env=prod
 
-Test your new bundle:
+**Test your new bundle:**
 
 > http://.../hello/user
 
