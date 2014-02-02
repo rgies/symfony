@@ -1,7 +1,7 @@
 Abstract
 ===========
 
-Special Symfony 2.4 Distribution with Twitter Bootstrap
+Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap
 
 Install
 ========
