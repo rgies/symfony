@@ -1,0 +1,20 @@
+{{ '{% extends "::base.html.twig" %}' }}
+{{ '{% block title %}' -}}
+Hello
+{{- '{% endblock %}' }}
+{{ '{% block body %}' }}
+<h1>Hello {% raw %}{{ name }}{% endraw %}!</h1>
+
+<!-- Sample Bootstrap Components -->
+<h4>Bootstrap Labels</h4>
+<p>
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+</p>
+
+<p>Here you can insert your twitter bootstrap components</p>
+{{ '{% endblock %}' }}

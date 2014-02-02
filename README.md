@@ -39,12 +39,10 @@ Create bundle:
 > http://.../hello/user
 
 
-Symfony Twig Template Sample
-=============================
+Twig Template
+================
 
-Copy following html code to your default view `symfony/src/[your bundle]/Resources/views/Default/index.html.twig` and clear the symfony cache again.
-
-####src/[your bundle]/Resources/views/Default/index.html.twig
+To get twitter bootstrap running in your twig view you must extend from the base twig template. See sample below.
 
     {% extends '::base.html.twig' %}
     {% block title %}Hello{% endblock %}
@@ -64,4 +62,3 @@ Copy following html code to your default view `symfony/src/[your bundle]/Resourc
 
     <p>Here you can insert your twitter bootstrap components</p>
     {% endblock %}
-    
