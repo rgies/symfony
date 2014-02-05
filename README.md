@@ -1,7 +1,7 @@
 Abstract
 ===========
 
-Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap
+Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap.
 
 Install
 ========
