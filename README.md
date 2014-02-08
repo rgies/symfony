@@ -6,7 +6,7 @@ Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap.
 Install
 ========
 
-Download and install [Composer](http://getcomposer.org).
+Download and install [Composer](http://getcomposer.org/download).
 Then start the command line and goto your web root folder. Type in the following command to install Symfony.
 
 > php composer.phar create-project -s dev rgies/symfony [my-project]
