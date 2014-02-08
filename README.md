@@ -1,48 +1,43 @@
-Abstract
-===========
+Symfony 2 - Rapid Development Edition
+==============================
 
-Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap.
+Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap and GUI Bundle (Generator UI).
 
-Install
-========
+![](http://www.rgies.de/rad/rapid_development.png)
 
-Download and install [Composer](http://getcomposer.org/download).
-Then start the command line and goto your web root folder. Type in the following command to install Symfony.
+## Install ##
 
-> php composer.phar create-project -s dev rgies/symfony [my-project]
+Download and install **[Composer](http://getcomposer.org/download)**.
+Then start the command line and navigate to your web root folder.
 
-**Go to your project directory:**
+**Type in the following command to install:**
 
-> cd [my-project]
+	php composer.phar create-project -s dev rgies/symfony [my-project-folder]
 
-Update
-========
+**Jump into your project directory:**
 
-**Update with composer:**
+	cd [my-project-folder]
 
-> php composer.phar update
+**Start update to load all needed components:**
 
-
-Create bundle:
-==========================
-
-**Create your own new bundle:**
-
-> ./app/console generate:bundle
-
-**Clear cache:**
-
-> ./app/console cache:clear -env=prod
-
-**Test your new bundle:**
-
-> http://.../hello/user
+	php composer.phar update
 
 
-Twig Template
-================
+## Start work##
 
-To get twitter bootstrap running in your twig view you must extend from the base twig template. See sample below.
+Finish the composer install process an setup the database configuration.
+
+**Create database:**
+
+	./app/console doctrine:database:create
+
+**Call the web interface and create a new bundle:**
+
+	http://.../app_dev.php/gui
+
+## Twig template sample ##
+
+To get twitter bootstrap running in your twig view you must extend from the ```base twig template```. See sample below.
 
     {% extends '::base.html.twig' %}
     {% block title %}Hello{% endblock %}
