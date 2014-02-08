@@ -50,6 +50,8 @@ To get twitter bootstrap running in your twig view you must extend from the base
     <h1>Hello {{ name }}!</h1>
 
     <!-- Sample Bootstrap Components -->
+    <p>Here you can insert your twitter bootstrap components:</p>#
+    
     <h4>Bootstrap Labels</h4>
     <p>
         <span class="label label-default">Default</span>
@@ -60,5 +62,4 @@ To get twitter bootstrap running in your twig view you must extend from the base
         <span class="label label-danger">Danger</span>
     </p>
 
-    <p>Here you can insert your twitter bootstrap components</p>
     {% endblock %}
