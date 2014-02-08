@@ -1,7 +1,7 @@
 Symfony 2 - Rapid Development Edition
 ==============================
 
-Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap and GUI Bundle (Generator UI).
+Symfony 2.4 Rapid-Development-Edition with Twitter Bootstrap3, jQuery and GUI Bundle (Generator UI).
 
 ![](http://www.rgies.de/rad/rapid_development.png)
 
