@@ -14,15 +14,6 @@ Then start the command line and navigate to your web root folder.
 
 	php composer.phar create-project -s dev rgies/symfony [my-project-folder]
 
-**Jump into your project directory:**
-
-	cd [my-project-folder]
-
-**Start update to load all needed components:**
-
-	php composer.phar update
-
-
 ## Start work##
 
 Finish the composer install process an setup the database configuration.
