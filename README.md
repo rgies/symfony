@@ -18,10 +18,6 @@ Then start the command line and navigate to your web root folder.
 
 Finish the composer install process an setup the database configuration.
 
-**Create database:**
-
-	./app/console doctrine:database:create
-
 **Call the web interface and create a new bundle:**
 
 	http://.../app_dev.php/gui
