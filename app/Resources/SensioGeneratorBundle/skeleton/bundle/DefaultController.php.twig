@@ -21,12 +21,15 @@ class DefaultController extends Controller
      * @Template()
      */
     {% endif -%}
-    public function indexAction($name)
+    public function indexAction()
     {
+        $request = $this->container->get('request');
+        $bundleName = $request->attributes->get('_template')->get('bundle');
+
         {% if 'annotation' != format -%}
-        return $this->render('{{ bundle }}:Default:index.html.twig', array());
+        return $this->render('{{ bundle }}:Default:index.html.twig', array('bundleName' => $bundleName));
         {%- else -%}
-        return array();
+        return array('bundleName' => $bundleName);
         {%- endif %}
 
     }
