@@ -1,6 +1,6 @@
 parameters:
-    project.name:      MyApplication
-    project.version:   "1.0"
+    project_name:      MyApplication
+    project_version:   '1.0'
 
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
