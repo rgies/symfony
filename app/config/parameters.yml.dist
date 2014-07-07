@@ -1,6 +1,7 @@
 parameters:
     project_name:      MyApplication
     project_version:   '1.0'
+    contact_email:     contact@website.com
 
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
