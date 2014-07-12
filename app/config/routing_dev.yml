@@ -1,7 +1,7 @@
 _gui:
     resource: "@GuiBundle/Controller/"
     type:     annotation
-    prefix:   /gui
+    prefix:   /_gui
 
 _wdt:
     resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
@@ -17,3 +17,10 @@ _configurator:
 
 _main:
     resource: routing.yml
+
+_gui_default:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /_gui
+        permanent: true

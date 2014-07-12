@@ -16,9 +16,10 @@ Then start the command line and navigate to your web root folder.
 
 ## Start work##
 
-Finish the composer install process an setup the database configuration.
+Finish the composer install process an setup the application configuration.
 
 **Call the web interface and create a new bundle:**
 
-	http://.../app_dev.php/gui
+	http://localhost/.../app_dev.php
 
+*!! Please note the web interface only work at localhost !!*
