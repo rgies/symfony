@@ -32,7 +32,7 @@ security:
                 #target: _demo
             anonymous: ~
             http_basic:
-              realm: "Secured Demo Area"
+              realm: "%platform_name% Login"
 
     access_control:
         - { path: ^/login/, roles: ROLE_ADMIN }
