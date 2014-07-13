@@ -29,12 +29,11 @@ twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
     globals:
-        project:
-            name:     %project_name%
-            version:  %project_version%
-        company:
-            name:     %company_name%
-            email:    %company_email%
+        platform:
+            name:     "%platform_name%"
+            version:  "%platform_version%"
+            vendor:   "%platform_vendor%"
+            contact:  "%platform_contact%"
 
 # Assetic Configuration
 assetic:

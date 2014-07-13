@@ -1,9 +1,8 @@
 parameters:
-    project_name:      MyApplication
-    project_version:   '1.0'
-
-    company_name:      MyCompany GmbH
-    company_email:     contact@mycompany.com
+    platform_name:     MyApplication
+    platform_version:  '1.0'
+    platform_vendor:   MyCompany GmbH
+    platform_contact:  contact@website.com
 
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
