@@ -1,0 +1,56 @@
+<!-- START of Symfony2 Web Debug Toolbar -->
+{% if 'normal' != position %}
+    <div id="sfMiniToolbar-{{ token }}" class="sf-minitoolbar">
+        <a href="javascript:void(0);" title="Show Symfony toolbar" onclick="
+            var elem = this.parentNode;
+            if (elem.style.display == 'none') {
+                document.getElementById('sfToolbarMainContent-{{ token }}').style.display = 'none';
+                document.getElementById('sfToolbarClearer-{{ token }}').style.display = 'none';
+                elem.style.display = 'block';
+            } else {
+                document.getElementById('sfToolbarMainContent-{{ token }}').style.display = 'block';
+                document.getElementById('sfToolbarClearer-{{ token }}').style.display = 'block';
+                elem.style.display = 'none'
+            }
+
+            Sfjs.setPreference('toolbar/displayState', 'block');
+        ">
+            <img width="26" height="28" alt="Symfony" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAMAAABIzV/hAAACZFBMVEUwLjL///////////////////////////////////////////////////////////////////+Eg4b///+Ni46Xlpj///////////+op6n///////////////////////////////////////////////////////////9ZWFv///////9qaWz///////+mpaf///////////////9ZWFv///////////////9PTVH///91dHb////////////////////g4OD///9NTE+Ih4r///////+Ni47///////92dHeRkJLk5OTLy8xlY2b///////+cm53///////+5ubr////o6Oj////////U1NT///9DQURsa22rq6ysq61hX2L///+LioxTUVVBP0NEQkZpZ2rGxsf///9ram3////s7O2SkZNfXmFxcHKmpae4uLnKysuXlpiop6l3dXiIh4pYVlmrq6ycm52trK7Nzc48Oj5dW158e36dnJ49Oz/Pz9BiYGPAv8BDQUTQz9BVU1aioaNHRUnBwcJXVVk6ODxJR0t3dnmko6U8Oj6lpKY9Oz+0tLXDwsRQTlF7en1QTlHi4eJhX2LFxcZTUVViYGNwb3J+fX83NTlFQ0dUUlW4t7icm524uLk8Oj5YVlmPjpBLSU2enZ9aWVw/PkFBP0NdW153dnk0MjZQTlE1MzdQT1JdXF9ram15eHqGhYdDQkV5eHo2NThEQkZRUFNFQ0dta244NjpGREhTUVU5NztUUlVhX2JubG9HRUlVU1ZiYGM7OTxIRkk7OT1IR0o8Oj4wLjI9Oz8YdG13AAAAynRSTlMAAAEDBAUGCgsMDQ4QEhMUGRobGx0gISIkJiYnKCktLi8wMjM0NTk6Ozw+P0NFSEpLTE5PUFBTWlteXmBiZGVmaWxtcHBxc3R0dnl5fX+BgoOGi46Pj5CRmZqanZ6eoKeoq6ytsLCwsrO0tbe5urq8vL+/wsTFx8jJycvLy8vM0NHR0tLU1NfX2NnZ2trc3N3d3eHh4uLl5ebm5ubn5+fo6urt7e3u7vDx8/Pz9PT19fX19fX29vf39/j4+fn5+vr6+vv7+/z8/f3+yR5EtwAAAbVJREFUeNpl0mVXVFEYhuF3zhkOFqMjYmCi2MUYYKGIYiJ2YCd2t4IBFqgoKjZ2jg3igI2KyO2f8sTMngGvj/te71r7wyMuk4jofZccAihcMzJKXDYnuYcVotyeYKiktV5LA0faaE7S4s7TyMsBupnMcoH/vO6gmanJaiLV1Py+Xwn5zc0fjCbSi2LI2QdkGdLyFBG+rHwMzz4BD7wyGEfFk8pfsD2TkGmyFNvFHfDj55v02VD6DcteOYylatY8oG7boA2QV4vlklzB8tU3/DIwo+dWv58guY5tRcLMtwSGdi1DkTvAn9Jqsgbu4kafRBqlV4sDFCWuIjdhMsp7yQU49rB28/QPLOu2DuWqLMfmfw6M716GskdGVRMSGDKRsEzpvZ+Qs0lFKDd94s2oArh2F7K3oNQt6ChGr5x6+Dx3J7d2E3Ygqam4PCkngRNnngYIO5cWq4lLb5t+vJ6GiifFR1nbMNqP3fSOCN8PZnQynEW5W/nmHy0PXv79eHpRSjsjtEOtWZcRc9YXlNx7VFKwceGYHjG6s0Ob3iK+X3LqlKnjkvt39rjD6w3W6BhvrCdaVw//ADrWicJIvtkmAAAAAElFTkSuQmCC" />
+        </a>
+    </div>
+    <style>
+        {% include '@WebProfiler/Profiler/toolbar.css.twig' with { 'position': position, 'floatable': true } %}
+    </style>
+    <div id="sfToolbarClearer-{{ token }}" style="clear: both; height: 38px;"></div>
+{% endif %}
+
+<div id="sfToolbarMainContent-{{ token }}" class="sf-toolbarreset">
+    {% for name, template in templates %}
+        {{ template.renderblock('toolbar', {
+            'collector': profile.getcollector(name),
+            'profiler_url': profiler_url,
+            'token': profile.token,
+            'name': name
+          })
+        }}
+    {% endfor %}
+
+    <div class="sf-toolbar-block">
+        <div class="sf-toolbar-icon">
+            <a href="{{ path('gui') }}">
+                <img width="32" height="28" alt="GUI" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAcCAYAAAATFf3WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZDMDRFNkQwQkE4MTFFNEJGMURDREJGOUU5QUI5QkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZDMDRFNkUwQkE4MTFFNEJGMURDREJGOUU5QUI5QkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkMwNEU2QjBCQTgxMUU0QkYxRENEQkY5RTlBQjlCQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkMwNEU2QzBCQTgxMUU0QkYxRENEQkY5RTlBQjlCQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpdqlhYAAAkqSURBVHjazFdpTFRX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">
+            </a>
+        </div>
+    </div>
+
+    {% if 'normal' != position %}
+        <a class="hide-button" title="Close Toolbar" onclick="
+            var p = this.parentNode;
+            p.style.display = 'none';
+            (p.previousElementSibling || p.previousSibling).style.display = 'none';
+            document.getElementById('sfMiniToolbar-{{ token }}').style.display = 'block';
+            Sfjs.setPreference('toolbar/displayState', 'none');
+        "></a>
+    {% endif %}
+</div>
+<!-- END of Symfony2 Web Debug Toolbar -->
