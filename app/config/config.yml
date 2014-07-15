@@ -28,6 +28,8 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources:    ["::base_form_theme.html.twig"]
     globals:
         platform:
             name:     "%platform_name%"
