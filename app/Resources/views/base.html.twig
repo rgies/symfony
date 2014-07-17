@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}{{ platform.name }}{% endblock %}</title>
+        <meta name="description" content="{{ platform.description }}" />
+        <meta name="keywords" content="{{ platform.keywords }}" />
         <!-- Twitter Bootstrap Stylesheet -->
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
         {% block stylesheets %}{% endblock %}

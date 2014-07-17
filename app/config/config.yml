@@ -32,10 +32,12 @@ twig:
         resources:    ["::base_form_theme.html.twig"]
     globals:
         platform:
-            name:     "%platform_name%"
-            version:  "%platform_version%"
-            vendor:   "%platform_vendor%"
-            contact:  "%platform_contact%"
+            name:        "%platform_name%"
+            version:     "%platform_version%"
+            vendor:      "%platform_vendor%"
+            contact:     "%platform_contact%"
+            keywords:    "%platform_keywords%"
+            description: "%platform_description%"
 
 # Assetic Configuration
 assetic:
