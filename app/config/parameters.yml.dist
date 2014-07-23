@@ -19,4 +19,5 @@ parameters:
     mailer_password:   ~
 
     locale:            en
+    timezone:          "Europe/Berlin"
     secret:            ThisTokenIsNotSoSecretChangeIt
