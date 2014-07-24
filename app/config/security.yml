@@ -16,24 +16,24 @@ security:
 
     firewalls:
         dev:
-            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            pattern:  ^/(_(profiler|wdt|gui)|css|images|js)/
             security: false
 
         login:
-            pattern:  ^/demo/secured/login$
+            pattern:  ^/login$
             security: false
 
         secured_area:
             pattern:    ^/
-            #form_login:
-            #    check_path: _security_check
-            #    login_path: _demo_login
+            form_login:
+                login_path: login
+                check_path: login_auth
+                csrf_provider: form.csrf_provider
+                csrf_parameter: _security_token
             logout:
                 path:   logout
                 #target: _demo
             anonymous: ~
-            http_basic:
-              realm: "%platform_name% Login"
 
     access_control:
-        - { path: ^/login/, roles: ROLE_ADMIN }
+        #- { path: ^/xxx/, roles: ROLE_ADMIN }
