@@ -23,3 +23,5 @@ Finish the composer install process an setup the application configuration.
 	http://localhost/.../app_dev.php
 
 *!! Please note the web interface only work at localhost !!*
+
+**For more informations go to [agile-dev.org](http://www.agile-dev.org)**
