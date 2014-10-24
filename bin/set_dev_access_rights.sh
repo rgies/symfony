@@ -2,8 +2,8 @@
 
 ROOTPATH=`pwd`/`dirname $0`/..
 
-rm -rf $ROOTPATH/app/cache/*
-rm -rf $ROOTPATH/app/logs/*
+sudo rm -rf $ROOTPATH/app/cache/*
+sudo rm -rf $ROOTPATH/app/logs/*
 
 HTTPDUSER=`ps aux | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1`
 if [ "$HTTPDUSER" == "" ]; then
