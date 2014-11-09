@@ -13,5 +13,6 @@ fi
 
 echo "Set file permitions to $HTTPDUSER and owner to `whoami` !"
 sudo chown -R "`whoami`" $ROOTPATH
+sudo chmod 0777 $ROOTPATH/app/console
 sudo chmod -R +a "$HTTPDUSER allow delete,write,append,file_inherit,directory_inherit" $ROOTPATH/app $ROOTPATH/src $ROOTPATH/web $ROOTPATH/vendor
 sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" $ROOTPATH/app/cache $ROOTPATH/app/logs
