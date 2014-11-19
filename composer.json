@@ -59,7 +59,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "lts-dev"
+            "dev-master": "2.3-dev"
         }
     }
 }
