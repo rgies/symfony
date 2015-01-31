@@ -23,7 +23,7 @@
         <script src="{{ asset('js/jquery.form.min.js') }}"></script>
         <!-- jQuery Form Validate -->
         <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
-        <script src="{{ asset('js/locales/messages_' ~ app.request.locale ~ '.min.js') }}" />
+        {% if app.request.locale != 'en' %}<script src="{{ asset('js/locales/messages_' ~ app.request.locale ~ '.min.js') }}" />{% endif %}
         <!-- Twitter Bootstrap -->
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <!-- Twitter Bootstrap Fileupload -->
