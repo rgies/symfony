@@ -19,13 +19,13 @@
         {% block body %}{% endblock %}
         <!-- jQuery Framework -->
         <script src="{{ asset('js/jquery-1.10.2.min.js') }}"></script>
+        <!-- Twitter Bootstrap -->
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <!-- jQuery Ajax Form -->
         <script src="{{ asset('js/jquery.form.min.js') }}"></script>
         <!-- jQuery Form Validate -->
         <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
         {% if app.request.locale != 'en' %}<script src="{{ asset('js/locales/messages_' ~ app.request.locale ~ '.min.js') }}" />{% endif %}
-        <!-- Twitter Bootstrap -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <!-- Twitter Bootstrap Fileupload -->
         <script src="{{ asset('js/bootstrap-filestyle.min.js') }}"></script>
         <!-- Dropzone.js File Uploader -->
