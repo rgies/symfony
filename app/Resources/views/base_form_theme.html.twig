@@ -35,7 +35,11 @@
 
 {% block widget_attributes %}
     {% spaceless %}
-        {% set attr = attr|merge({'class': 'form-control' }) %}
+        {% if attr.class is defined %}
+            {% set attr = attr|merge({'class': 'form-control ' ~ attr.class }) %}
+        {% else %}
+            {% set attr = attr|merge({'class': 'form-control' }) %}
+        {% endif %}
         id="{{ id }}" name="{{ full_name }}"
         {%- if read_only %} readonly="readonly"{% endif -%}
         {%- if disabled %} disabled="disabled"{% endif -%}
