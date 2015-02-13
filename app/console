@@ -7,6 +7,9 @@
 
 set_time_limit(0);
 
+// workaround for 1und1 hosting
+if (!defined('STDIN')) define('STDIN',fopen("php://stdin","r"));
+
 require_once __DIR__.'/bootstrap.php.cache';
 require_once __DIR__.'/AppKernel.php';
 
