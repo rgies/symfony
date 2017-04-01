@@ -5,7 +5,7 @@ Symfony 2 Rapid-Development-Framework with Twitter Bootstrap3, jQuery and GUI Bu
 
 ![](http://www.rgies.de/rad/rapid_development.png)
 
-## Install ##
+## Install
 
 Download and install **[Composer](http://getcomposer.org/download)**.
 Then start the command line and navigate to your web root folder.
@@ -18,7 +18,7 @@ Then start the command line and navigate to your web root folder.
 
 	php composer.phar create-project rgies/symfony [my-project-folder] "2.3.x-dev"
 	
-## Start work##
+## Start work
 
 Finish the composer install process an setup the application configuration.
 
