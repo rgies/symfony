@@ -3,10 +3,12 @@
 /app/cache/*
 /app/config/parameters.yml
 /app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
+!/app/cache/.gitkeep
+!/app/logs/.gitkeep
 /build/
-/vendor/
-/bin/
+/vendor/*
+!/vendor/.htaccess
+/bin/*
+!/bin/.htaccess
 /composer.phar
 /composer.lock
