@@ -30,6 +30,11 @@ Finish the composer install process an setup the application configuration.
 
 ## Start Work
 
-If you use the Website Template you can login as "admin" / "admin".
+Load initial data
 
-*!! Please generate in the RAD Cockpit Options menue as new password for the security.yml !!*
+        $ app/console doctrine:fixture:load
+    
+    **Note:**
+    Default login credentials are (admin/admin).
+
+*!! If you use the Website Template without user management you can generate new passwords for the security.yml in the RAD Cockpit options menue !!*
