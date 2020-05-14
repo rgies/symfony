@@ -18,7 +18,7 @@ Then start the command line and navigate to your web root folder.
 
 	php composer.phar create-project rgies/symfony [my-project-folder] "2.3.x-dev"
 	
-## Start work
+## Setup
 
 Finish the composer install process an setup the application configuration.
 
@@ -28,3 +28,7 @@ Finish the composer install process an setup the application configuration.
 
 *!! Please note the web interface only work at localhost !!*
 
+## Start Work
+
+If you use the Website Template you can login as "admin" / "admin".
+*!! Please generate in the RAD Cockpit Options menue as new password for the security.yml !!*
