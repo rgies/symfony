@@ -28,4 +28,3 @@ Finish the composer install process an setup the application configuration.
 
 *!! Please note the web interface only work at localhost !!*
 
-**For more informations go to [agile-dev.org](http://www.agile-dev.org)**
