@@ -34,7 +34,7 @@ Load initial data
 
         $ app/console doctrine:fixture:load
     
-    **Note:**
-    Default login credentials are (admin/admin).
+**Note:**
+Default login credentials are (admin/admin).
 
 *!! If you use the Website Template without user management you can generate new passwords for the security.yml in the RAD Cockpit options menue !!*
