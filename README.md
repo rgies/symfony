@@ -30,9 +30,7 @@ Finish the composer install process an setup the application configuration.
 
 ## Start Work
 
-Load initial data
-
-        $ app/console doctrine:fixture:load
+Now you can login and start to work on your website. :-) 
     
 **Note:**
 Default login credentials are (admin/admin).
